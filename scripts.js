@@ -236,10 +236,6 @@ function tampilkanStruk() {
     strukItemsContainer.innerHTML = '';
     let total = 0;
 
-    if (namaUserEl) {
-        namaUserEl.innerHTML = `<strong>Nama Pelanggan:</strong> ${userName || "Tidak diketahui"}`;
-    }
-
     cart.forEach(item => {
         const totalPerItem = item.price * item.quantity;
         total += totalPerItem;
